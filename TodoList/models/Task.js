@@ -5,9 +5,9 @@ const taskSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    completed: {
+    check: {
         type: Boolean,
-        required: true,
+        required: false,
     },
     date:{
         type: Date,

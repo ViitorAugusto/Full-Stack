@@ -1,5 +1,7 @@
 const Task = require("../models/Task");
-const getAll = async (req, res) => {
+
+
+const getAllTask = async (req, res) => {
   try {
     const taskList = await Task.find();
     return res.render("index", {taskList});
@@ -11,7 +13,7 @@ const getAll = async (req, res) => {
 const createTask = async (req, res) => {
   const task = req.body;
 
-  if (!task) {
+  if (!task.task) {
     return res.redirect("/");
   }
   try {
@@ -23,6 +25,6 @@ const createTask = async (req, res) => {
 };
 
 module.exports = {
-  getAll,
+  getAllTask,
   createTask,
 };
