@@ -15,7 +15,8 @@ const createTask = async (req, res) => {
   const task = req.body;
   console.log(task);
   
-  if (!task) {
+  if (!task.task) {
+    //Task.create({task: "Mudar Task", check: false});
     return res.redirect("/");
   }
   try {

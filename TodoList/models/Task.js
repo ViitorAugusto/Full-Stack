@@ -7,12 +7,13 @@ const taskSchema = new mongoose.Schema({
     },
     check: {
         type: Boolean,
-        required: true,
+        required: false,
     },
     date:{
         type: Date,
         default: Date.now(),
     }
+    
 });
 
 module.exports = mongoose.model("Task", taskSchema);
