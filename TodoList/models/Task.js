@@ -7,7 +7,7 @@ const taskSchema = new mongoose.Schema({
     },
     check: {
         type: Boolean,
-        required: false,
+        required: true,
     },
     date:{
         type: Date,

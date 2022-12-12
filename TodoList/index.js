@@ -8,6 +8,7 @@ const port = 3000;
 
 connectToDb();
 app.use(routes);
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded());
 app.set("view engine", "ejs");

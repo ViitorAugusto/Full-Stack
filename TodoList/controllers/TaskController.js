@@ -8,12 +8,14 @@ const getAllTask = async (req, res) => {
   } catch (error) {
     res.status(500).send({ error: error.message });
   }
+ 
 };
 
 const createTask = async (req, res) => {
   const task = req.body;
-
-  if (!task.task) {
+  console.log(task);
+  
+  if (!task) {
     return res.redirect("/");
   }
   try {
