@@ -19,7 +19,7 @@
     <header>
 
         <% if (task==null) { %>
-            <%- include('./components/form', {titleForm: "TO DO LIST", action: "create", value: "", idBtn: "addButton", nameBtn: "Adicionar"})%>
+            <%- include('./components/form', {titleForm: "TODO LIST", action: "create", value: "", idBtn: "addButton", nameBtn: "Adicionar"})%>
         <% } else { %>
             <%- include('./components/form', {titleForm: "EDITAR TAREFA", action: `updateOne/${task._id}`, value: task.task, idBtn: "updateButton", nameBtn: "Atualizar"}) %>
         <% } %>
