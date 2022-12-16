@@ -25,13 +25,13 @@
         <% } %>
 
     </header>
-
+<% if (tasksList.length > 0) { %>
     <section id="tasks">
         <ul>
             <% tasksList.forEach((task)=>{ %>
-                <li class="check-<%= task.check %>">
+                <li  class="check-<%= task.check %>">
                     <div>
-                        <a href="/check/<%= task._id %>" class="check-<%= task.check %>"><%= task.task %></a>
+                        <a id='checks' href="/check/<%= task._id %>" class="check-<%= task.check %>"><%= task.task %></a>
                         <span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span> 
                     </div>
                      
@@ -44,24 +44,29 @@
         </ul>
     </section>
 
+<% } %>
+   
+
+
     <% if (taskDelete !=null) { %>
         <%- include('./components/modalDel', {task: taskDelete})  %>
     <% } %>
 
     <footer>
        
-        <div>
+        <div class="footersocial">
+            <section class="social">
             <hr>
-            <i class="bi bi-github"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-whatsapp"></i>
-        </div>
+            <a href="https://github.com/ViitorAugusto" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/viitoraugusto/" target="_blank"> <i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/viitormattoss/" target="_blank"> <i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/vitor.augusto.5602728" target="_blank"> <i class="bi bi-facebook" ></i></a>
+            <a href="https://wa.me/5511971351731" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+        </section>
         <div>
-            
             Feito por Vitor Augusto De Mattos © 2022
         </div>
+    </div>
         </footer>
 
             <script src="script.js"></script>
