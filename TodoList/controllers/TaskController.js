@@ -9,6 +9,7 @@ const getAllTasks = async (req, res) => {
       message = "";
     }, 1000);
     const tasksList = await Task.find();
+    console.log(tasksList);
     return res.render("index", {
       tasksList,
       task: null,
