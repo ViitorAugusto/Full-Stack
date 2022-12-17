@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
-
+  font-family: "Ubuntu", sans-serif;
 }
 :root {
-    --gray : #333;
-    --gray-light: #ccc;
-    --background: #f2f2f2;
-    --gray-light2: rgba(0, 0, 0, 0.2);
-    --gray-light3: rgba(0, 0, 0, 0.3);
-    --gray-light4: rgba(0, 0, 0, 0.4);
-    --black : #000;
-    --white: #fff;
-    --blue-light: rgb(53, 130, 219);
-    --red-light: rgba(219, 53, 61, 0.753);
-    --gray-spam:(51, 51, 51, 0.664);
+  --gray: #333;
+  --gray-light: #ccc;
+  --background: #f2f2f2;
+  --gray-light2: rgba(0, 0, 0, 0.2);
+  --gray-light3: rgba(0, 0, 0, 0.3);
+  --gray-light4: rgba(0, 0, 0, 0.4);
+  --black: #000;
+  --white: #fff;
+  --blue-light: rgb(53, 130, 219);
+  --red-light: rgba(219, 53, 61, 0.753);
+  --gray-spam: (51, 51, 51, 0.664);
 }
 body {
-  background-color:var(--background);
+  background-color: var(--background);
   font-size: 1rem;
   line-height: 1.5;
   color: var(--gray);
@@ -58,8 +57,7 @@ footer {
   bottom: 0;
   margin-top: 5rem;
 }
-#tasks{
-  
+#tasks {
 }
 .footersocial {
   display: flex;
@@ -89,8 +87,8 @@ form {
   flex-wrap: wrap;
   padding: 1.25rem;
   height: 7.5rem;
-  border-radius:.3rem;
-  margin-bottom: .625rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.625rem;
 }
 input {
   width: 70%;
@@ -100,7 +98,6 @@ input {
   padding: 0.625rem;
   font-size: 1.2rem;
   margin: 0.625rem;
-    
 }
 input:focus {
   outline: none;
@@ -118,7 +115,6 @@ button {
   background-color: var(--white);
   cursor: pointer;
   transition: all 0.5s ease;
-
 }
 button:hover {
   background-color: var(--blue-light);
@@ -136,7 +132,6 @@ ul {
   border-radius: 0.3rem;
   box-shadow: 2px 3px 10px var(--gray-light4);
   margin-bottom: 6rem;
-
 }
 li {
   width: 100%;
@@ -152,7 +147,6 @@ li {
   justify-content: space-between;
   align-items: center;
   box-shadow: 1px 3px 10px var(--gray-light2);
-  
 }
 span {
   color: var(--gray-spam);
@@ -176,7 +170,7 @@ span {
   transition: all 0.5s ease;
 }
 .btnDelete {
-    border-radius: 0.4rem;
+  border-radius: 0.4rem;
   color: var(--gray);
   padding: 0.625rem;
   font-size: 1.3rem;
@@ -223,15 +217,15 @@ div#head {
   height: 3.2rem;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 div#card p {
   font-size: 1.2rem;
-    padding: 1.5rem;
-    line-height: 2rem;
-    text-align: center;
+  padding: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
 }
 #btns {
   display: flex;
@@ -257,25 +251,25 @@ div#card p {
 }
 
 #btnYes {
-    border-radius: 0.4rem;
-    padding: 0.6rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    color: var(--gray);
-    background-color: var(--white);
-    text-decoration: none;
-    width: 8rem;
-    text-align: center;
-    border: 1px solid var(--gray-light);
-    box-shadow: 0 0 10px var(--gray-light3);
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: var(--gray);
+  background-color: var(--white);
+  text-decoration: none;
+  width: 8rem;
+  text-align: center;
+  border: 1px solid var(--gray-light);
+  box-shadow: 0 0 10px var(--gray-light3);
 }
 #close {
-    color: var(--gray);
-    font-size: 2.5rem;
+  color: var(--gray);
+  font-size: 2.5rem;
 }
 #close:hover {
-    color: var(--red-light);
+  color: var(--red-light);
 }
 #btnYes:hover {
   background-color: var(--red-light);
@@ -285,53 +279,52 @@ div#card p {
   background-color: var(--blue-light);
   color: var(--white);
 }
-.message{
-    position: fixed;
-    bottom: 8rem;
-    right: 5rem;
-    background-color: var(--white);
-    padding: 1rem;
-    border-radius: 0.4rem;
-    box-shadow: 0 0 10px var(--gray-light3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20rem;
-    height: 5rem;
-    font-size: 1.2rem;
-    animation: slide-indes 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.message {
+  position: fixed;
+  bottom: 8rem;
+  right: 5rem;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 10px var(--gray-light3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  animation: slide-indes 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-indes {
-    0% {
-        transform: translateX(100%);
-        
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .message::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 20rem;
-    height: 0.4rem;
-    border-radius: 3rem;
-    background-color: var(--blue-light);
-    animation: time 5s forwards;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20rem;
+  height: 0.4rem;
+  border-radius: 3rem;
+  background-color: var(--blue-light);
+  animation: time 5s forwards;
 }
 @keyframes time {
-    0% {
-        width: 20rem;
-    }
-    100% {
-        width: 0;
-    }
+  0% {
+    width: 20rem;
+  }
+  100% {
+    width: 0;
+  }
 }
-.bi-x{
-    font-size: 2rem;
-    cursor: pointer;
+.bi-x {
+  font-size: 2rem;
+  cursor: pointer;
 }
